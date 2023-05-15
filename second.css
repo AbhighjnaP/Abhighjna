@@ -1,0 +1,293 @@
+
+*{
+  overflow-x: hidden
+}
+h2{
+  float: right;
+  margin-right: 10px;
+}
+.contact-section {
+  color: black;
+}
+
+.contact-section a {
+  color: black;
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Set the height to match the width */
+
+}
+  
+.grid-item {
+    width: calc(50% - 10px); /* Set the width to 50% minus the margin */
+    height: calc(50% - 10px); /* Set the height to 50% minus the margin */
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 30px;
+  }
+ .right-side {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;  /*adjust this as needed */
+    margin-right: 10px;
+    margin-top: 45%;
+  }
+
+ .intro-text {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  float: right;
+  margin-right: 30px;
+}
+
+.button-container {
+  display: block;
+  margin-top: 10px;
+}
+
+.button {
+  margin-left: 10px;
+}
+.button,a {
+  display: inline-block;
+  padding: 10px 10px;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button {
+  float: right;
+  position: absolute;
+  top: 300px;
+  left: 90%;
+  padding: 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  transform: rotate(-90deg);
+}
+
+    
+  #modal-container {
+    display: flex; /* Hide modal by default */
+    position: absolute;
+    z-index: 1;
+    margin-left: 900px;
+    top: 10%;
+    width: 30%;
+    height: 50%;
+    left: 5%;
+    overflow: auto;
+    background-color: rgba(252, 218, 254, 0.8);
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  
+  #modal-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    max-width: 800px;
+  }
+  
+  #modal-image {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+  }
+  #modal-caption ,p{
+    color: black;
+  }
+  p{
+    color: black;
+  }
+  .model-button button {
+    background-color: rgb(182, 111, 249);
+    color: white;
+    border: none;
+    padding: 10px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    margin: 10px auto;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    transform: rotate(0);
+    box-sizing: border-box;
+    left: 25%;
+  }
+  
+ 
+  .model-button button:hover {
+    background-color:blueviolet;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+    margin-top: 15%;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Add your mobile styles here 
+@media (max-width: 480px) {
+  /* Adjust the styles as needed 
+  body {
+      padding: 10px;
+  }
+  
+  img {
+      width: 100%;
+      height: auto;
+  }
+  
+  .right-side {
+      position: static;
+      width: 100%;
+      margin: 10px 0;
+  }
+  
+  .grid-container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+  }
+  
+  .grid-item {
+      width: 100%;
+      height: auto;
+      margin: 5px 0;
+      display: block;
+  }
+  
+  .button {
+      position: static;
+      transform: none;
+      writing-mode: horizontal-tb;
+      margin: 10px 0;
+      text-align: center;
+      width: 100%;
+  }
+  
+  #modal-container {
+      width: 90%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 5%;
+      height: 60%;
+      overflow-y: scroll;
+  }
+  
+  #modal-content {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 10px;
+  }
+}
+/* Add your mobile and tablet styles here */
+@media (max-width: 768px) {
+  /* Adjust the styles as needed for tablets */
+  body {
+    padding: 10px;
+    overflow: hidden; /* Prevent scrolling */
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-side {
+    position: static;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .grid-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .grid-item {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    display: block;
+  }
+
+  .button {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    writing-mode: horizontal-tb;
+    margin: 10px 0;
+    text-align: center;
+    width: 90%;
+    z-index: 999;
+  }
+
+  #modal-container {
+    width: 90%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 5%;
+    height: 60%;
+    overflow-y: scroll;
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  #modal-content {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Add this style to make the button appear */
+  .button {
+    display: block;
+  }
+}
+
+
